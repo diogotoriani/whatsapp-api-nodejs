@@ -468,7 +468,7 @@ class WhatsAppInstance {
         return data
     }
 
-    async sendUrlMediaFile(to, url, type, mimeType, caption = '') {
+    async sendUrlMediaFile(to, url, type, mimeType, caption = '', filename) {
         await this.verifyId(this.getWhatsAppId(to))
 
         const data = await this.instance.sock?.sendMessage(
