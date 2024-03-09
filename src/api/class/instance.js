@@ -479,6 +479,7 @@ class WhatsAppInstance {
                 },
                 caption: caption,
                 mimetype: mimeType,
+                fileName: filename ? filename : 'arquivo',
             }
         )
         return data
